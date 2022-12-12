@@ -2,7 +2,7 @@
 
 var lines = await File.ReadAllLinesAsync("input.txt");
 
-//Part1(lines);
+Part1(lines);
 Part2(lines);
 
 static bool fullyContains((int, int) entry1, (int, int) entry2)

@@ -59,7 +59,6 @@ int calculateScore(RockPaperScissors opponentPlay, RockPaperScissors myPlay)
     throw new InvalidOperationException($"Missing play {opponentPlay} vs {myPlay}");
 }
 
-
 int calculateScore2(RockPaperScissors opponentPlay, Result result)
 {
 

@@ -11,7 +11,6 @@ var resultString = string.Concat(stacks.Select(stack => stack.Last()));
 
 Console.WriteLine($"result is {resultString}");
 
-
 static void processLists(IEnumerable<string> orders, List<List<string>> stacks)
 {
     foreach (var order in orders)

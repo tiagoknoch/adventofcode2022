@@ -3,9 +3,10 @@ Console.WriteLine("Hello, World!");
 
 var input = await File.ReadAllTextAsync("input.txt");
 
-//var markerIndex = FindMarker(input);
-var markerIndex = FindMessage(input);
+var markerIndex = FindMarker(input);
+var messageIndex = FindMessage(input);
 Console.WriteLine($"Marker found at index {markerIndex}");
+Console.WriteLine($"Message found at index {messageIndex}");
 
 static int FindMarker(string input)
 {

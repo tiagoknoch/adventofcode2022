@@ -1,8 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
 var entries = await File.ReadAllLinesAsync("input.txt");
 
-//Part1(entries);
-//Part2(entries);
+Part1(entries);
+Part2(entries);
+
 void Part2(string[] entries)
 {
     var totalValue = Split(entries, 3)
