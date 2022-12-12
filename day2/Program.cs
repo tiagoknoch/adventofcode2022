@@ -17,7 +17,6 @@ foreach (var item in entries)
 Console.WriteLine($"total score: {scores.Sum()}");
 Console.WriteLine($"total score2: {scores2.Sum()}");
 
-
 int calculateScore(RockPaperScissors opponentPlay, RockPaperScissors myPlay)
 {
     // draw = 3
@@ -61,8 +60,6 @@ int calculateScore(RockPaperScissors opponentPlay, RockPaperScissors myPlay)
 
 int calculateScore2(RockPaperScissors opponentPlay, Result result)
 {
-
-
     // draw = 3
     if (result == Result.Draw)
     {
@@ -107,7 +104,6 @@ RockPaperScissors calculatePlay(RockPaperScissors opponentPlay, Result result)
     throw new InvalidOperationException($"Missing play {opponentPlay} vs {result}");
 }
 
-
 RockPaperScissors convert(string play)
 {
     switch (play)
@@ -125,7 +121,6 @@ RockPaperScissors convert(string play)
 
     throw new InvalidOperationException("convert was not expecting value " + play);
 }
-
 
 Result convertScore(string play)
 {
