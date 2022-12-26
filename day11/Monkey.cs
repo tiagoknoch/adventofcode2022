@@ -1,6 +1,5 @@
 namespace Day11
 {
-
     public class Monkey
     {
         public Monkey(IEnumerable<long> items, Func<long, int> action, Func<long, long> operation)
@@ -8,7 +7,7 @@ namespace Day11
             this.items = new List<long>(items);
             this.action = action;
             this.operation = operation;
-            this.NrInspections = 0;
+            NrInspections = 0;
         }
 
         public long NrInspections { get; private set; }
@@ -34,7 +33,14 @@ namespace Day11
                 var worryLevel = items[0];
                 items.RemoveAt(0);
                 var newWorryLevel = operation(worryLevel);
-                newWorryLevel /= 3;
+                // Part1
+                //newWorryLevel /= 3;
+
+                // Part2 Demo
+                //newWorryLevel %= 96577;
+
+                // Part2 Input
+                newWorryLevel %= 9699690;
                 var monkeyToThrow = action(newWorryLevel);
                 OnItemThrownEvent(newWorryLevel, monkeyToThrow);
             }

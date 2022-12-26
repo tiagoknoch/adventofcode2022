@@ -3,12 +3,13 @@
     internal class Program
     {
         static List<Monkey> monkeys = new();
-        private static void Main(string[] args)
+        private static void Main()
         {
             //GenerateDemoMonkeys();
             GenerateInputMonkeys();
 
-            var round = 20;
+            //Use 20 for Part1
+            var round = 10000;
             while (round > 0)
             {
                 round--;
